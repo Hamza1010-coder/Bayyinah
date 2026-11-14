@@ -1,0 +1,525 @@
+{
+  "generated_at": "2026-11-11T07:24:37.582040+00:00",
+  "summary": {
+    "recall_at_5": 1.0,
+    "mrr": 0.828125,
+    "citation_precision": 0.5333333333333333,
+    "citation_validity": 1.0,
+    "grounded_rate": 0.9375,
+    "refusal_accuracy": 0.75,
+    "false_refusal_rate": 0.0625,
+    "p50_latency_ms": 1.6,
+    "n_items": 20,
+    "n_answerable": 16,
+    "n_refusable": 4
+  },
+  "rows": [
+    {
+      "id": "qa-001",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": true,
+      "refusal_reason": "no_evidence",
+      "retrieved": [
+        "60",
+        "85",
+        "74",
+        "53",
+        "80"
+      ],
+      "cited": [],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "citation_precision": null,
+      "citation_valid": null,
+      "grounded": false,
+      "confidence": "high",
+      "latency_ms": 1.5,
+      "calculations": []
+    },
+    {
+      "id": "qa-002",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "53",
+        "98",
+        "85",
+        "74",
+        "84"
+      ],
+      "cited": [
+        "53"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 1.0,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.2,
+      "calculations": []
+    },
+    {
+      "id": "qa-003",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "53",
+        "109",
+        "80",
+        "74",
+        "60"
+      ],
+      "cited": [
+        "53",
+        "109"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.5,
+      "calculations": []
+    },
+    {
+      "id": "qa-004",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "85",
+        "84",
+        "80",
+        "98",
+        "60"
+      ],
+      "cited": [
+        "85",
+        "84"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.5,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 2.2,
+      "calculations": []
+    },
+    {
+      "id": "qa-005",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "85",
+        "80",
+        "84",
+        "60",
+        "109"
+      ],
+      "cited": [
+        "85",
+        "80"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.9,
+      "calculations": [
+        3000.0
+      ]
+    },
+    {
+      "id": "qa-006",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "85",
+        "84",
+        "80",
+        "60",
+        "53"
+      ],
+      "cited": [
+        "85",
+        "84"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.9,
+      "calculations": []
+    },
+    {
+      "id": "qa-007",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "84",
+        "60",
+        "53",
+        "85",
+        "109"
+      ],
+      "cited": [
+        "84",
+        "60"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "citation_precision": 0.0,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 2.2,
+      "calculations": []
+    },
+    {
+      "id": "qa-008",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "98",
+        "80",
+        "53",
+        "74",
+        "84"
+      ],
+      "cited": [
+        "98",
+        "80"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.6,
+      "calculations": []
+    },
+    {
+      "id": "qa-009",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "98",
+        "80",
+        "53",
+        "74",
+        "84"
+      ],
+      "cited": [
+        "98"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 1.0,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.2,
+      "calculations": []
+    },
+    {
+      "id": "qa-010",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "109",
+        "98",
+        "60",
+        "84",
+        "53"
+      ],
+      "cited": [
+        "109"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 1.0,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.7,
+      "calculations": []
+    },
+    {
+      "id": "qa-011",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "109",
+        "80",
+        "85",
+        "98",
+        "60"
+      ],
+      "cited": [
+        "109",
+        "80"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.6,
+      "calculations": []
+    },
+    {
+      "id": "qa-012",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "60",
+        "74",
+        "80",
+        "85",
+        "53"
+      ],
+      "cited": [
+        "60",
+        "74"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.4,
+      "calculations": []
+    },
+    {
+      "id": "qa-013",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "74",
+        "80",
+        "60",
+        "53",
+        "98"
+      ],
+      "cited": [
+        "74",
+        "80"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.5,
+      "calculations": []
+    },
+    {
+      "id": "qa-014",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "80",
+        "53",
+        "60",
+        "74",
+        "98"
+      ],
+      "cited": [
+        "80",
+        "53"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 2.1,
+      "calculations": []
+    },
+    {
+      "id": "qa-015",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "60",
+        "98",
+        "53",
+        "84",
+        "109"
+      ],
+      "cited": [
+        "60",
+        "98"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "citation_precision": 0.0,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.7,
+      "calculations": []
+    },
+    {
+      "id": "qa-016",
+      "answerable": false,
+      "must_refuse": true,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "53",
+        "80",
+        "98",
+        "109",
+        "60"
+      ],
+      "cited": [
+        "53",
+        "80"
+      ],
+      "recall_at_k": null,
+      "reciprocal_rank": null,
+      "citation_precision": null,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.8,
+      "calculations": []
+    },
+    {
+      "id": "qa-017",
+      "answerable": false,
+      "must_refuse": true,
+      "refused": true,
+      "refusal_reason": "no_evidence",
+      "retrieved": [
+        "85",
+        "84",
+        "80",
+        "60",
+        "109"
+      ],
+      "cited": [],
+      "recall_at_k": null,
+      "reciprocal_rank": null,
+      "citation_precision": null,
+      "citation_valid": null,
+      "grounded": false,
+      "confidence": "high",
+      "latency_ms": 1.4,
+      "calculations": []
+    },
+    {
+      "id": "qa-018",
+      "answerable": false,
+      "must_refuse": true,
+      "refused": true,
+      "refusal_reason": "out_of_scope",
+      "retrieved": [
+        "74",
+        "84",
+        "109",
+        "60",
+        "85"
+      ],
+      "cited": [],
+      "recall_at_k": null,
+      "reciprocal_rank": null,
+      "citation_precision": null,
+      "citation_valid": null,
+      "grounded": false,
+      "confidence": "high",
+      "latency_ms": 0.0,
+      "calculations": []
+    },
+    {
+      "id": "qa-019",
+      "answerable": false,
+      "must_refuse": true,
+      "refused": true,
+      "refusal_reason": "unlawful_intent",
+      "retrieved": [
+        "85",
+        "80",
+        "84",
+        "109",
+        "60"
+      ],
+      "cited": [],
+      "recall_at_k": null,
+      "reciprocal_rank": null,
+      "citation_precision": null,
+      "citation_valid": null,
+      "grounded": false,
+      "confidence": "high",
+      "latency_ms": 0.0,
+      "calculations": []
+    },
+    {
+      "id": "qa-020",
+      "answerable": true,
+      "must_refuse": false,
+      "refused": false,
+      "refusal_reason": null,
+      "retrieved": [
+        "80",
+        "109",
+        "60",
+        "74",
+        "53"
+      ],
+      "cited": [
+        "80",
+        "109"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "citation_precision": 0.5,
+      "citation_valid": true,
+      "grounded": true,
+      "confidence": "medium",
+      "latency_ms": 1.9,
+      "calculations": []
+    }
+  ]
+}

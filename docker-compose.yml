@@ -1,0 +1,21 @@
+services:
+  bayyinah:
+    build: .
+    image: bayyinah:latest
+    ports:
+      - "8080:8080"
+    environment:
+      BAYYYINAH_DB_PATH: /data/bayyinah.db
+      # Set this in production. Without it the API is unauthenticated.
+      BAYYYINAH_API_KEY: ${BAYYINAH_API_KEY:-}
+      BAYYYINAH_RATE_LIMIT: ${BAYYINAH_RATE_LIMIT:-60}
+      # Leave unset for the fully-local extractive baseline (no data egress).
+      BAYYYINAH_LLM_BASE_URL: ${BAYYINAH_LLM_BASE_URL:-}
+      BAYYYINAH_LLM_MODEL: ${BAYYINAH_LLM_MODEL:-}
+      BAYYYINAH_LLM_API_KEY: ${BAYYINAH_LLM_API_KEY:-}
+    volumes:
+      - bayyinah-data:/data
+    restart: unless-stopped
+
+volumes:
+  bayyinah-data:

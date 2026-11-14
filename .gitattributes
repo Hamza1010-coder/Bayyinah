@@ -1,0 +1,16 @@
+# Normalize line endings so Windows contributors do not churn the whole repo.
+* text=auto eol=lf
+
+*.py    text
+*.md    text
+*.toml  text
+*.yml   text
+*.html  text
+*.css   text
+*.json  text
+*.jsonl text
+*.txt   text
+*.docx  binary
+*.pdf   binary
+*.db    binary
+*.png   binary

@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+var/
+corpora/index/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+report.html
+
+# Stray directories created by earlier sandbox/temp experiments.
+tmp*/
+
+# Generated report artifacts: keep the committed samples, ignore the rest.
+*.docx
+!docs/samples/*.docx
+*.pdf
+!docs/samples/*.pdf
+
+# This file is locked by a document viewer on one machine; never commit it.
+docs/samples/sample_report.docx
+docs/samples/sample_report.html

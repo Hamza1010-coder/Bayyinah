@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayyinah"
+version = "1.0.0"
+description = "Arabic-first, citation-verified compliance copilot for Saudi employment law"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []  # core is stdlib-only by design
+
+[project.optional-dependencies]
+docs = ["python-docx>=1.1"]      # Word export + .docx ingest
+pdf = ["pypdf>=4.0"]             # PDF ingest (text-layer PDFs only)
+ml = ["sentence-transformers>=2.7", "torch>=2.2"]   # BGE-M3 embeddings
+dev = ["ruff>=0.4"]
+
+[project.scripts]
+bayyinah = "bayyinah.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bayyinah*"]
+
+[tool.setuptools.package-data]
+"bayyinah.api" = ["static/*.html"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "B008"]

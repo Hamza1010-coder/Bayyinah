@@ -1,0 +1,12 @@
+{"id":"c-001","clause":"تكون فترة التجربة ستة أشهر قابلة للتمديد.","expected":"non_compliant","article":"53"}
+{"id":"c-002","clause":"فترة التجربة تسعون يوماً فقط.","expected":"not_covered","article":"53"}
+{"id":"c-003","clause":"يوافق الطرف الثاني على التنازل عن مكافأة نهاية الخدمة عند انتهاء العلاقة.","expected":"non_compliant","article":"84"}
+{"id":"c-004","clause":"تكون ساعات العمل 56 ساعة أسبوعياً.","expected":"non_compliant","article":"98"}
+{"id":"c-005","clause":"تكون ساعات العمل ثماني ساعات يومياً.","expected":"not_covered","article":"98"}
+{"id":"c-006","clause":"يستحق الموظف إجازة سنوية مدتها 15 يوماً.","expected":"non_compliant","article":"109"}
+{"id":"c-007","clause":"يستحق الموظف إجازة سنوية مدتها ثلاثون يوماً.","expected":"not_covered","article":"109"}
+{"id":"c-008","clause":"يجوز للطرف الأول إنهاء العقد دون إشعار في أي وقت.","expected":"risky","article":"60"}
+{"id":"c-009","clause":"يلتزم الطرف الثاني بالعمل لدى الطرف الأول بوظيفة أخصائي موارد بشرية.","expected":"not_covered","article":""}
+{"id":"c-010","clause":"تكون فترة التجربة أربعة أشهر.","expected":"non_compliant","article":"53"}
+{"id":"c-011","clause":"يتقاضى الموظف أجراً شهرياً قدره 9,500 ريال.","expected":"not_covered","article":""}
+{"id":"c-012","clause":"يتنازل العامل عن حقه في مكافأة نهاية الخدمة.","expected":"non_compliant","article":"84"}

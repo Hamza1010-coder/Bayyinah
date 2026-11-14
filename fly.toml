@@ -1,0 +1,50 @@
+# Fly.io deployment — a public URL in about ten minutes.
+#
+#   fly launch --no-deploy --name bayyinah   # accept the detected Dockerfile
+#   fly volumes create bayyinah_data --size 1
+#   fly deploy
+#
+# Then mount the volume at /data (fly.toml already declares it) and set a secret:
+#   fly secrets set BAYYYINAH_API_KEY=$(openssl rand -hex 24)
+#
+# Region note: for PDPL-friendly hosting, prefer a Middle East region such as
+# `jed` (Jeddah) if your account has access; otherwise document the region you
+# actually used rather than implying in-Kingdom residency.
+
+app = "bayyinah"
+primary_region = "jed"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  BAYYYINAH_DB_PATH = "/data/bayyinah.db"
+  BAYYYINAH_RATE_LIMIT = "60"
+  PORT = "8080"
+
+[mounts]
+  source = "bayyinah_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type = "requests"
+    hard_limit = 60
+    soft_limit = 30
+
+[[http_service.checks]]
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "10s"
+  method = "GET"
+  path = "/api/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

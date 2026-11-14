@@ -1,0 +1,49 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # The core has no dependencies; these two unlock the full test matrix
+      # (DOCX ingest/export and PDF error paths).
+      - name: Install optional extras
+        run: pip install python-docx pypdf
+
+      - name: Byte-compile every module
+        run: python -m compileall -q bayyinah evals tests
+
+      - name: Check documentation links
+        run: python scripts/check_links.py
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: Ingest the bundled corpus
+        run: python -m bayyinah ingest corpora/raw
+
+      - name: Eval gate (blocks the build on regression)
+        run: python evals/run_eval.py --fail-on-gate
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report-${{ matrix.python-version }}
+          path: evals/reports/*.json
+          if-no-files-found: ignore
