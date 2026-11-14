@@ -23,3 +23,6 @@ tmp*/
 # This file is locked by a document viewer on one machine; never commit it.
 docs/samples/sample_report.docx
 docs/samples/sample_report.html
+
+publish.ps1
+PUBLISH.bat
