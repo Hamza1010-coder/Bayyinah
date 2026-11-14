@@ -1,5 +1,8 @@
 # بيّنة · Bayyinah
 
+[![ci](https://github.com/Hamza1010-coder/Bayyinah/actions/workflows/ci.yml/badge.svg)](https://github.com/Hamza1010-coder/Bayyinah/actions/workflows/ci.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-0b6b3a.svg)](LICENSE)
+
 **Arabic-first compliance copilot for Saudi employment law. Every answer carries the article it came from — or it doesn't answer.**
 
 > **Status:** v1.0, working end to end. 163 tests, 8 eval metrics gated in CI.
